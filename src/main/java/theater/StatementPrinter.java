@@ -82,7 +82,7 @@ public class StatementPrinter {
 
     }
 
-    // task 2.2 8
+    // task 2.2-8
     private int getVolumeCredits(Performance performance) {
         int result = 0;
 
