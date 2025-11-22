@@ -98,19 +98,19 @@ public class StatementPrinter {
     }
 
     private int getTotalVolumeCredits() {
-        int result = 0;
+        int re = 0;
         for (final Performance performance : invoice.getPerformances()) {
-            result += getVolumeCredits(performance);
+            re += getVolumeCredits(performance);
         }
-        return result;
+        return re;
     }
 
     private int getTotalAmount() {
-        int result = 0;
+        int re = 0;
         for (final Performance performance : invoice.getPerformances()) {
-            result += getAmount(performance);
+            re += getAmount(performance);
         }
-        return result;
+        return re;
     }
 
     private String usd(int amountInCents) {
